@@ -473,7 +473,7 @@ Span::init(char *an, int64_t size)
     break;
   }
 
-  pathname = ats_strdup(filename);
+  pathname = ats_strdup(an);
   blocks = size / hw_sector_size;
   file_pathname = !((s.st_mode & S_IFMT) == S_IFDIR);
 
